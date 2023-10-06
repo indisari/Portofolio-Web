@@ -23,6 +23,20 @@ html {
   font-variation-settings: normal;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #333;
+  color: white;
+}
+
 body {
   margin: 0;
   line-height: inherit;
@@ -93,6 +107,11 @@ table {
   text-indent: 0;
   border-color: inherit;
   border-collapse: collapse;
+}
+
+.custom-button {
+  background-color: blue;
+  color: white;
 }
 
 button,
@@ -562,9 +581,9 @@ video {
   border-radius: 0.5rem;
 }
 
-..bg-blue-500 {
+.bg-gray-950 {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity)); /* Warna biru */
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
 }
 
 .bg-gray-700 {
@@ -582,9 +601,9 @@ video {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
-.bg-green-500 {
+.bg-teal-950 {
   --tw-bg-opacity: 1;
-  background-color: rgb(16 185 129 / var(--tw-bg-opacity)); /* Warna hijau */
+  background-color: rgb(4 47 46 / var(--tw-bg-opacity));
 }
 
 .bg-blue-100 {
@@ -612,9 +631,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-pink-500 {
+.bg-gray-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(245 101 101 / var(--tw-bg-opacity)); /* Warna merah muda */
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .stroke-gray-200 {
@@ -837,5 +856,23 @@ video {
 @media (prefers-color-scheme: dark) {
   .dark\:inline {
     display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 }
